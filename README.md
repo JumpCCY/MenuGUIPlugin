@@ -6,4 +6,3 @@ Now, the GUI menu only have 2 buttons which containes LOBBY(Warp option) and Clo
 - require essential spawn or any spawn plugin
 
 THIS PLUGIN IS STILL DEVELOPING 
-STILL NEED A LOT OF IMPROVEMENT!
