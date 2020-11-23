@@ -35,7 +35,7 @@ public class Click implements Listener {
     @EventHandler
     public void userInventoryClick(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-        if (player.getItemInHand().getType().equals(Material.NETHER_STAR)) Bukkit.dispatchCommand(event.getPlayer(), "menu");
+        if (player.getItemInHand().equals(MenuItem.getMenu())) Bukkit.dispatchCommand(event.getPlayer(), "menu");
     }
 
     @EventHandler
@@ -49,7 +49,7 @@ public class Click implements Listener {
     @EventHandler
     public void PlayerItemHeldEvent(InventoryClickEvent event) {
         if (event.getCurrentItem() == null) return;
-            if (event.getCurrentItem().getType().equals(Material.NETHER_STAR)) {
+            if (event.getCurrentItem().equals(MenuItem.getMenu())) {
                 if (event.getClick().isShiftClick()) Bukkit.dispatchCommand(event.getWhoClicked(), "menu");
                 if (event.getClick().isRightClick()) Bukkit.dispatchCommand(event.getWhoClicked(), "menu");
                 if (event.getClick().isLeftClick()) Bukkit.dispatchCommand(event.getWhoClicked(), "menu");

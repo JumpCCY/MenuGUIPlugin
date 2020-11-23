@@ -30,7 +30,7 @@ public class giveMenu implements CommandExecutor {
             //events
             inventory.clear(inventory.getHeldItemSlot() + 8);
             inventory.setItem(8, menu);
-            commandSender.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + ">> " + ChatColor.RED + "Whoosh!");
+            commandSender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + ">> " + ChatColor.RED + "Whoosh!");
             Logger.getLogger(String.valueOf(commandSender)).info("Give " + ((Player) commandSender).getPlayer().getName() + " new menu!");
         }
         else commandSender.sendMessage(ChatColor.DARK_RED + "You do not have access to that command");
