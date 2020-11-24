@@ -6,6 +6,8 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
 public class Life implements Listener {
+    
+    //PlayerRespawnEvent
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event){
         //events
@@ -13,7 +15,7 @@ public class Life implements Listener {
         event.getPlayer().getInventory().setItem(8, MenuItem.getMenu());
     }
 
-    //PlayerDeathEvent will be add soon
+    //PlayerDeathEvent
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event){
         if(event.getEntity().getInventory().contains(MenuItem.getMenu())){
