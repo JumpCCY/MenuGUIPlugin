@@ -17,7 +17,7 @@ public class Menu extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Click(), this);
         getServer().getPluginManager().registerEvents(new onJQ(), this);
         getServer().getPluginManager().registerEvents(new Life(), this);
-        this.getCommand("gui items").setExecutor(new giveMenu());
+        getCommand("gui items").setExecutor(new giveMenu());
         getLogger().info("========================");
         getLogger().info("Welcome to the first plugin developed by jjump88");
         getLogger().info("========================");
