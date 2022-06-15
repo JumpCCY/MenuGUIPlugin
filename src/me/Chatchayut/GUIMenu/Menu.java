@@ -12,21 +12,21 @@ public class Menu extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("========================");
-        getLogger().info("STARTING JJUMP88's GUI MENU");
+        getLogger().info("STARTING JumpCCY's GUI MENU");
         getCommand("gui").setExecutor(new MenuCommand());
         getServer().getPluginManager().registerEvents(new Click(), this);
         getServer().getPluginManager().registerEvents(new onJQ(), this);
         getServer().getPluginManager().registerEvents(new Life(), this);
         getCommand("gui items").setExecutor(new giveMenu());
         getLogger().info("========================");
-        getLogger().info("Welcome to the first plugin developed by jjump88");
+        getLogger().info("Welcome to the first plugin developed by JumpCCY");
         getLogger().info("========================");
     }
 
     @Override
     public void onDisable() {
         getLogger().info("------------------------");
-        getLogger().info("DISABLED jjump88 GUI MENU plugin, Bye!");
+        getLogger().info("DISABLED JumpCCY GUI MENU plugin, Bye!");
         getLogger().info("------------------------");
     }
 
