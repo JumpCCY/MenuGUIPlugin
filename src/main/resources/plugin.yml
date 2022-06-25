@@ -1,0 +1,17 @@
+name: jjump88_GUI_MENU
+description: GUI_MENU
+version: '${project.version}'
+author: Chatchayut(jjump88)
+main: main.java.me.Chatchayut.GUIMenu.Menu
+
+commands:
+  menu:
+    description: open GUI menu
+  givemenu:
+    description: give you a new menu
+  spawn:
+    description: teleports player to spawn
+    aliases: [hub, l]
+  setspawn:
+    description: set spawn point
+

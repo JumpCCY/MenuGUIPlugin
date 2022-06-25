@@ -1,4 +1,4 @@
-package me.Chatchayut.GUIMenu.events;
+package main.java.me.Chatchayut.GUIMenu.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
